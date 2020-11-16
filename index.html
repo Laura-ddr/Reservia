@@ -21,30 +21,63 @@
     </header>
 
     <div class="wrapper">
-
       <h1>Trouver votre hébergement pour des vacances de rêve</h1>
       <h2>En plein centre ville ou en pleine nature</h2>
 
       <div class="search_btn">
-
-        <div class="icone">
             <i class="fas fa-map-marker-alt"></i>
-        </div>
 
           <form method="post" action="traitement.php">
-            <p><input class="search" type="text" name="ville" id="search" placeholder="Marseille, France" /></p>
+            <p><input type="text" name="ville" id="search" placeholder="Marseille, France" /></p>
           </form>
 
-        <div class="btn">
-          <button type="button" name="button">Rechercher</button>
-        </div>
-
+          <button class="btn" type="button" name="button">Rechercher</button>
       </div>
+
     </div>
 
-    <main>
+    <div class="filter">
 
-    </main>
+    <ul class="flt">
+      <li class="choice">Filtres</li>
+      <li class="choose active">
+        <div class="icon">
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+          Économique
+      </li>
+      <li class="choose active">
+        <div class="icon">
+          <i class="fas fa-child"></i>
+        </div>
+          Familial
+      </li>
+      <li class="choose active">
+        <div class="icon">
+          <i class="fas fa-heart"></i>
+        </div>
+          Romantique
+      </li>
+      <li class="choose active">
+        <div class="icon">
+          <i class="fas fa-dog"></i>
+        </div>
+          Animaux aurorisés
+      </li>
+    </ul>
+
+    <div class="info">
+
+      <div class="iconinfo">
+        <i class="fas fa-info"></i>
+      </div>
+
+      <p class="textinfo"> Plus de 500 logements sont disponibles dans cette ville </p>
+
+    </div>
+
+
+    </div>
 
   </body>
 </html>
