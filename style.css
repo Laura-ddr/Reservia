@@ -1,5 +1,5 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 </style>
 
 html{
@@ -13,55 +13,72 @@ html {
 body,*{
   margin: 0;
   padding: 0;
-  --font:'Raleway';
+  --font:'Raleway', sans-serif;
   --size-h1:24px;
   --size-h2:16px;
   --size-h3:14px;
   --size-p:12px;
   --size-link-menu:16px;
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semi-bold:600;
+  --weight-bold:700;
+  --dark-blue: #0065FC;
+  --light-blue: #DEEBFF;
+  --grey: #E7E7E7;
+  --light-grey: #F2F2F2;
+  --white: #FFFFFF;
+  --black: #000;
+  --font-size-icon-star: 13px;
+  --font-size-icon-info: 11px;
+  --font-size-icon-filtre: 16px;
 }
 
 h1{
   grid-column: 1 / span 2;
   padding-top: 24px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font);
   font-size: var(--size-h1);
-  font-weight: bold;
+  font-weight: var(--weight-bold);
 }
 
 h2 {
   padding-top: 16px;
-  font-family: "Raleway";
+  font-family: var(--font);
   font-size: var(--size-h2);
-  font-weight: 500;
+  font-weight: var(--weight-semi-bold);
 }
 
 h3 {
-  padding-top: 16px;
-  font-family: "Raleway";
+  padding-top: 8px;
+  font-family: var(--font);
   font-size: var(--size-h3);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 
 p {
-
-  font-family: "Raleway";
+  padding-top: 4px;
+  font-family: var(--font);
   font-size: var(--size-p);
-  font-weight: 500;
+  font-weight: var(--weight-regular);
 }
-.grid{display: grid;}
 
- .one{
-   display: grid;
-   grid-column: 1 / 3;
-   grid-row: 2;
+.grid{
+  display: grid;
+}
 
-  }
+.one{
+  display: grid;
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
 
-  .two{
-    display: grid;
-    grid-row: 3;
-   }
+.two{
+  display: grid;
+  grid-row: 3;
+}
+
+
 /*///////////////////////////////////////////  HEADER  ///////////////////////////////////////////*/
 
 header {
@@ -104,22 +121,26 @@ header > .logo img {
   position: relative;
   display: block;
   padding: 15px 0;
+  font-family: var(--font);
   font-size: var(--size-link-menu);
-  font-weight: 400;
+  font-weight: var(--weight-regular);
   text-decoration: none;
 }
 
 .link-blue {
-  color: #0065FC;
+  color: var(--dark-blue);
+  font-family: var(--font);
+  font-size: var(--size-link-menu);
+  font-weight: var(--weight-regular);
   position: relative;
   display: block;
   padding: 15px 0;
   text-decoration: none;
-  font-size: var(--size-link-menu);
+
 }
 
 .link1:hover{
-  color: #0065FC;
+  color: var(--dark-blue);
   text-decoration: none;
 }
 
@@ -137,12 +158,12 @@ header > .logo img {
 
 .link1:after, .link-blue::after {
   right: 0;
-  background: #0065FC;
+  background: var(--dark-blue);
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .link1:hover:before, .link-blue:hover:before {
-  background: #0065FC;
+  background: var(--dark-blue);
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -153,9 +174,6 @@ header > .logo img {
   transition: 0s;
 }
 
-
-element.style {
-}
 .logo {
     display: grid;
     grid-row: 1;
@@ -170,8 +188,8 @@ element.style {
 }
 
 .fa-map-marker-alt {
-  background-color: #F2F2F2;
-  font-size: 15px;
+  background-color: var(--light-grey);
+  font-size: var(--font-size-icon-filtre);
   border-radius: 18px 0 0 18px ;
   width: 26px;
   padding: 15px;
@@ -182,12 +200,12 @@ element.style {
 }
 
 #search {
-  border: solid 1px #F2F2F2;
+  border: solid 1px var(--light-grey);
   padding: 14px;
   font-size: 13px;
   width: 140px;
   font-weight: bold;
-  color: #000;
+  color: var(--black);
 }
 
 input#search {
@@ -203,8 +221,8 @@ button.btn {
   cursor: pointer;
   border-radius: 0 18px 18px 0;
   width: 130px;
-  background-color: #0065FC;
-  border: solid 1px #0065FC;
+  background-color: var(--dark-blue);
+  border: solid 1px var(--dark-blue);
   color: #FFF;
 }
 
@@ -221,7 +239,7 @@ button.btn {
   display: flex;
   cursor: pointer;
   margin-right: 20px;
-  border: solid 1px #F2F2F2;
+  border: solid 1px var(--light-grey);
   border-radius: 50px;
 }
 
@@ -235,13 +253,13 @@ button.btn {
   transform:scale(1);
   filter:blur(0px);
   opacity:1;
-  box-shadow: 0px 0px 5px #F2F2F2;
+  box-shadow: 0px 0px 5px var(--light-grey);
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
   font-size: 16px;
   color: #0065FC;
-  background-color: #DEEBFF;
+  background-color: var(--light-blue);
   border-radius: 100%;
   padding: 7px;
 }
@@ -252,6 +270,9 @@ button.btn {
   }
 
 .textli{
+  font-family: var(--font);
+  font-size: var(--size-h2);
+  font-weight: var(--weight-medium);
   display: flex;
   width: auto;
   align-items: center;
@@ -261,6 +282,9 @@ button.btn {
 }
 
 .filter {
+  font-family: var(--font);
+  font-size: var(--size-h2);
+  font-weight: var(--weight-medium);
   display: flex;
   margin-right: 20px;
   list-style: none;
@@ -280,16 +304,17 @@ button.btn {
   width: auto;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-weight: lighter;
+  font-family: var(--font);
+  font-size: var(--size-p);
+  font-weight: var(--weight-regular);
   padding-left: 10px;
   padding-right: 20px;
 }
 
 .fa-info{
   display: flex;
-  font-size: 11px;
-  color: #0065FC;
+  font-size: var(--font-size-icon-info);
+  color: var(--dark-blue);
 }
 
 .iconinfo {
@@ -299,33 +324,136 @@ button.btn {
   width: 10px;
   border-radius: 100%;
   padding: 3px;
-  border: solid 1px #0065FC;
+  border: solid 1px var(--dark-blue);
 }
 
-/*///////////////////////////////////////////  VIGNETTE  ///////////////////////////////////////////*/
+/*///////////////////////////////////////////  BIG - VIGNETTE  ///////////////////////////////////////////*/
 
 .contenair {
-
-  background-color: #F2F2F2;
+  margin-top: 40px;
+  background-color: var(--light-grey);
   border-radius: 21px;
+  max-width: 100%;
+  height: auto;
+}
+
+.bloc-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-gap: 24px;
+    justify-content: center;
 }
 
 .contenair > h1 {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: var(--font);
+  font-size: var(--size-h1);
+  font-weight: var(--weight-bold);
   padding: 20px;
 }
 
 .bloctext {
   width: auto;
-  margin-left: 20px;
+  padding: 10px;
   border-radius: 21px;
-  background-color: grey;
+  background-color: white;
 }
 
 .bloctext > img {
-  display: block;
+  object-fit: cover;
   margin: auto;
-  border-radius: 21px 21px 0 0;
-  width: 95%;
+  width: 100%;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.textstikers > h3{
+  font-family: var(--font);
+  font-size: var(--size-h3);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+
+}
+
+.textstikers > p {
+  font-family: var(--font);
+  font-size: var(--size-p);
+  font-weight: var(--weight-regular);
+}
+
+.fa-star{
+  padding-top: 4px;
+  font-size: var(--font-size-icon-star);
+  color: var(--dark-blue);
+}
+
+.grey2, .grey3 {
+  color: var(--grey);
+}
+
+.loadmore {
+  border: none;
+  background: none;
+}
+
+/*///////////////////////////////////////////  SMALL - VIGNETTE  ///////////////////////////////////////////*/
+
+.petit-contenair {
+  margin-left: 32px;
+  margin-top: 40px;
+  background-color: var(--light-grey);
+  border-radius: 21px;
+  max-width: 100%;
+}
+
+.bloc-petite-vignette {
+    display: grid;
+    grid-row: 3;
+  grid-gap: 24px;
+  justify-content: center;
+}
+
+.bloc-vignette {
+  padding: 10px;
+  border-radius: 21px;
+  background-color: white;
+}
+
+.bloc-vignette > img {
+  object-fit: cover;
+  margin: auto;
+  width: 100%;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.textvignette {
+  display: grid;
+}
+
+.textvignette > h3{
+  font-family: var(--font);
+  font-size: var(--size-h3);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+
+}
+
+.textvignette > p {
+  font-family: var(--font);
+  font-size: var(--size-p);
+  font-weight: var(--weight-regular);
+}
+
+.fa-star{
+  padding-top: 4px;
+  font-size: var(--font-size-icon-star);
+  color: var(--dark-blue);
+}
+
+.grey2, .grey3 {
+  color: var(--grey);
 }
