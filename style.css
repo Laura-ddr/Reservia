@@ -231,6 +231,7 @@ button.btn {
 
 .flt {
   display: flex;
+  width: 53%;
 }
 
 .choose{
@@ -514,6 +515,14 @@ i.fas.fa-chart-line {
 }
 
 /*///////////////////////////////////////////  ACTIVITE ///////////////////////////////////////////*/
+.section h1{
+  font-family: var(--font);
+  font-size: var(--size-h1);
+  font-weight: var(--weight-bold);
+  padding-top: 42px;
+}
+
+
 .grid-activity{
   display: grid;
   grid-gap: 30px;
@@ -555,16 +564,19 @@ i.fas.fa-chart-line {
 }
 
 .item--xsmall {
-  grid-column-end: auto;
+  grid-row: span 1 / 4;
 }
 .item--small {
-  grid-row-end: span 2;
+  grid-row: 1 / span 2;
+}
+.item--small2 {
+  grid-row: 5 / 3;
 }
 .item--medium {
-  grid-row-end: span 2;
+  grid-row: 1 / span 2;
 }
 .item--large {
-  grid-row-end: span 3;
+  grid-row: 1 / span 3;
 }
 
 .item__details {
