@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reservia </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3c9e5108e1.js" crossorigin="anonymous"></script>
@@ -23,29 +24,27 @@
 
 <!-- ///////////////////////////////////////////  H1 H2 BOUTTON RECHERChe /////////////////////////////////////////// -->
     <section class="one">
-    <div class="wrapper">
-      <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-      <h2>En plein centre ville ou en pleine nature</h2>
+      <div class="wrapper">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
 
       <div class="search_btn">
-            <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-map-marker-alt"></i>
 
-          <form method="post" action="traitement.php">
-            <input type="text" name="ville" id="search" placeholder="Marseille, France"/>
-          </form>
+        <form method="post" action="traitement.php">
+          <input type="text" name="ville" id="search" placeholder="Marseille, France"/>
+        </form>
 
           <button class="btn" type="button" name="button">Rechercher</button>
       </div>
-
     </div>
 
 <!-- ///////////////////////////////////////////  FILTRES  /////////////////////////////////////////// -->
 
     <ul class="flt">
-
       <li class="filter">Filtres</li>
-
       <li class="choose">
+
         <div class="icon">
           <i class="fa fa-money-bill-wave"></i>
         </div>
@@ -55,6 +54,7 @@
       </li>
 
       <li class="choose">
+
         <div class="icon">
           <i class="fas fa-child"></i>
         </div>
@@ -62,7 +62,9 @@
          Familial
         </div>
       </li>
+
       <li class="choose">
+
         <div class="icon">
           <i class="fas fa-heart"></i>
         </div>
@@ -70,7 +72,9 @@
          Romantique
         </div>
       </li>
+
       <li class="choose">
+
         <div class="icon">
           <i class="fas fa-dog"></i>
         </div>
@@ -82,18 +86,20 @@
 
 <!-- ///////////////////////////////////////////  INFO TEXT/ICON  /////////////////////////////////////////// -->
 
-    <div class="info">
-      <div class="iconinfo">
-        <i class="fas fa-info"></i>
+      <div class="info">
+        <div class="iconinfo">
+          <i class="fas fa-info"></i>
+        </div>
+       <div class="textinfo">Plus de 500 logements sont disponibles dans cette ville</div>
       </div>
-        <div class="textinfo">Plus de 500 logements sont disponibles dans cette ville</div>
-    </div>
 
-  </section>
+   </section>
 <!-- ///////////////////////////////////////////  VIGNETTE HÉBERGEMENT  /////////////////////////////////////////// -->
 
-    <section class="contenair">
-      <h1>Hébergement à Marseille</h1>
+    <section class="contenair two">
+<div class="title-hebergement">
+        <h1>Hébergement à Marseille</h1>
+</div>
 
       <div class="bloc-articles">
 
@@ -203,16 +209,18 @@
                             </div>
                       </div>
                     </article>
-                      <button class="loadmore" type="button" name="button">Voir plus</button>
 
-         </div>
-      </section>
+                </div>
+                  <button class="loadmore" type="button" name="button">Voir plus</button>
+             </section>
 
 <!-- ///////////////////////////////////////////  VIGNETTE POPULAIRE /////////////////////////////////////////// -->
 
-      <section class="petit-contenair">
-        <h1>Les plus populaire</h1>
-        <i class="fas fa-chart-line"></i>
+      <section class="petit-contenair two">
+        <div class="title-pop">
+          <h1>Les plus populaire</h1>
+          <i class="fas fa-chart-line"></i>
+        </div>
 
         <div class="bloc-petite-vignette">
 
@@ -223,7 +231,7 @@
                       <h3>Hotel Le soleil du matin</h3>
                       <p>Nuit à partir de 128€</p>
                     </div>
-                  <div class="star">
+                  <div class="star-pop">
                    <i class="fas fa-star"></i>
                    <i class="fas fa-star"></i>
                    <i class="fas fa-star"></i>
@@ -240,7 +248,7 @@
                         <h3>Au coeur de l'eau chambres d'hôtes</h3>
                         <p>Nuit à partir de 71€</p>
                       </div>
-                    <div class="star">
+                    <div class="star-pop">
                      <i class="fas fa-star"></i>
                      <i class="fas fa-star"></i>
                      <i class="fas fa-star"></i>
@@ -257,7 +265,7 @@
                           <h3>Hôtel Tout bleu et blanc</h3>
                           <p>Nuit à partir de 68€</p>
                         </div>
-                      <div class="star">
+                      <div class="star-pop">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -265,10 +273,60 @@
                        <i class="fas fa-star grey3"></i>
                       </div>
                   </div>
-                </article>
-      </section>
+             </article>
+          </div>
+        </section>
+<!-- ///////////////////////////////////////////  ACTIVITE  /////////////////////////////////////////// -->
+
+<div class="bloc-act">
+  <div class="contener-act">
+    <div class="bloc-titre-act">
+      <h1>Activités à Marseille</h1>
+    </div>
+
+    <div class="article-act">
+      <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+
+    </div>
+
+    </div>
+
+  </div>
 
 
+
+
+
+
+
+
+
+<!-- ///////////////////////////////////////////  FOOTER  /////////////////////////////////////////// -->
+
+
+<footer>
+  <div class="bloc-footer">
+    <div class="about">
+      <h1>À propos</h1>
+      <p>Fonctionnement du site</p>
+      <p>Conditions générale de vente</p>
+    </div>
+
+    <div class="hebergement">
+      <h1>Nos hébergements</h1>
+      <p>Chartre qualité</p>
+      <p>Soumettre votre hôtel</p>
+    </div>
+
+    <div class="contact">
+      <h1>Assistance</h1>
+      <p>Centre d'aide</p>
+      <p>Nous contacter</p>
+    </div>
+
+  </div>
+
+</footer>
 
 
   </body>
