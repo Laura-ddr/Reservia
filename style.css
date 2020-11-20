@@ -42,7 +42,6 @@ h1{
 }
 
 h2 {
-  padding-top:16px;
   font-family: var(--font);
   font-size: var(--size-h2);
   font-weight: var(--weight-semi-bold);
@@ -78,6 +77,7 @@ p {
   display: grid;
   grid-row: 3;
 }
+
 
 
 /*///////////////////////////////////////////  HEADER  ///////////////////////////////////////////*/
@@ -514,3 +514,69 @@ i.fas.fa-chart-line {
 }
 
 /*///////////////////////////////////////////  ACTIVITE ///////////////////////////////////////////*/
+.grid-activity{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-start: auto;
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item{
+  position: relative;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: #fff;
+  color: #fff;
+  background: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+}
+
+.item:nth-of-type(2n) {
+  background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.item:nth-of-type(3n) {
+  background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+.item:nth-of-type(4n) {
+  background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.item:nth-of-type(5n) {
+  background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+.item:nth-of-type(6n) {
+  background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+.item--xsmall {
+  grid-column-end: auto;
+}
+.item--small {
+  grid-row-end: span 2;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+
+.item__details {
+  font-family: var(--font);
+  font-size: var(--size-h2);
+  font-weight: var(--weight-semi-bold);
+  position: relative;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  z-index: 1;
+  padding: 20px;
+  color: #000;
+  background: #fff;
+  color: #000;
+}
