@@ -18,6 +18,10 @@ body,*{
   --size-h2:16px;
   --size-h3:14px;
   --size-p:12px;
+  --size-h1-mobile:22px;
+  --size-h2-mobile:16px;
+  --size-h3-mobile:11px;
+  --size-p-mobile:9px;
   --size-link-menu:16px;
   --weight-regular:400;
   --weight-medium:500;
@@ -241,7 +245,7 @@ button.btn {
   border-radius: 50px;
 }
 
-.choose2 {
+.li-animaux {
   list-style: none;
   display: flex;
   cursor: pointer;
@@ -249,13 +253,13 @@ button.btn {
   border-radius: 50px;
 }
 
-.flt:hover .choose{
+.flt:hover .choose {
   filter:blur(2px);
   opacity:.7;
   transform: scale(.98);
   box-shadow:none;
 }
-.flt:hover .choose:hover{
+.flt:hover .choose:hover {
   transform:scale(1);
   filter:blur(0px);
   opacity:1;
@@ -626,4 +630,9 @@ footer {
 
 .about p {
   padding-bottom: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {grid-column: 1;}
+    .link1 { grid-row: 2; grid-column: 1;}
 }
