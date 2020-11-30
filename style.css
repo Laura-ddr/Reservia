@@ -236,7 +236,7 @@ button.btn {
 
 .flt {
   display: flex;
-  width: 53%;
+  width: 54%;
 }
 
 .choose{
@@ -696,7 +696,7 @@ footer {
     border-radius: 18px;
     width: 54px;
     position: absolute;
-    right: 87px;
+    right: 59px;
     height: 45px;}
   .section {padding: 16px 20px 40px 20px;}
   .title-pop { padding: 0px 9px 10px;}
@@ -733,19 +733,38 @@ footer {
   .bloc-footer { position: relative; width: 100%; height: auto; flex-direction: column; padding-bottom: 20px; padding-top: 20px;}
   .about { width: 69%; justify-content: flex-start; padding-bottom: 20px; }
   .about h2 { padding-bottom: 8px; padding-top: 24px; }
+  footer {
+    margin-right: -28px;}
+  .title-pop > h1 { font-size: 22px;}
+  .title-hebergement h1 { font-size: 22px;}
+  .wrapper h1 {font-size: 22px;}
+
 }
 
 
 
 @media screen and (max-width: 375px){
-.petit-contenair {
-    top: 551px;padding: 16px 37px 40px 25px;}
-  }
+  .bloc-vignette {width: 292px;}
+  .petit-contenair {top: 551px;padding: 16px 37px 40px 25px;}
+  footer {margin-left: 0;margin-right: 0;}
+  .about {width: 85%;}
+  .title-pop > h1 { font-size: 22px;}
+  .title-hebergement h1 { font-size: 22px;}
+  .wrapper h1 {font-size: 22px;}
+  .iconinfo {width: 20px;}
+  i.fas.fa-info {font-size: 10px;}
+}
 
 
   @media screen and (max-width: 320px){
-    .bloc-vignette {
-        width: 298px;
-        height: auto;
-    }
-    }
+    .bloc-vignette { width: 236px; height: auto;}
+    .title-hebergement h1 { font-size: 22px;}
+    .wrapper h1 {font-size: 22px;}
+    .wrapper h2 {font-size: 14px;}
+    .iconinfo {width: 20px;}
+    i.fas.fa-info {font-size: 10px;}
+    .title-pop > h1 { font-size: 22px;}
+    .petit-contenair {top: 578px;}
+    #search {width: 161px;}
+    .btn {right: 41px;}
+}
