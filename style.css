@@ -65,6 +65,11 @@ p {
   font-weight: var(--weight-regular);
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .grid{
   display: grid;
   grid-gap: 40px;
@@ -688,8 +693,90 @@ footer {
   .bloc-vignette { width: 143px; height: auto; }
 }
 
+@media screen and (max-width: 540px) {
+  html {margin: 0 40px;}
+  .mobile{display:initial;}
+  .web{display:none;}
+  .btn {
+    border-radius: 18px;
+    width: 54px;
+    position: absolute;
+    right: 162px;
+    height: 45px;}
+  .section {padding: 16px 20px 40px 20px;}
+  .title-pop { padding: 0px 9px 10px;}
+  .link-blue { position: absolute; right: 46px; top: 15px; margin-right: 15px;}
+  header > .logo img { width: 90px; height: auto; margin-top: 15px;margin-left: 15px;}
+  .bloc-petite-vignette { flex-direction: column;padding: 0;}
+  .bloc-vignette { width: 363px; height: auto;}
+  .contenair {margin-top: 1020px; background-color: #FFF;}
+  .bloc-articles { grid-template-columns: repeat(1, 1fr);}
+  .grid-activity { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(6, 1fr); }
+  .item--large { grid-area: 1/1/2/2;}
+  .item--medium { grid-area: 2/1/3/2;}
+  .item--xsmall { grid-area: 3/1/4/2;}
+  #item--large2 { grid-area: 4/1/5/2;}
+  .item--small { grid-area: 5/1/6/2;}
+  .item--small2 { grid-area: 6/1/7/2;}
+  ul.flt { flex-wrap: wrap;}
+  .petit-contenair { top: 487px; padding: 16px 48px 40px 25px;}
+  .iconinfo { width: 14px;}
+  .menu ul { display: flex; list-style-type: none; justify-content: space-around; }
+  .menu { grid-row: 2;}
+  .menu > ul > li { padding-right: 0;}
+  .choose { margin-bottom: 20px; margin-left: 15px; margin-right: 0;}
+  .filter { margin-bottom: 20px; margin-left: 15px; margin-right: 0;}
+  .one { grid-gap: 30px;}
+  .info { margin-left: 15px;}
+  .wrapper h1 { margin-left: 15px;}
+  .wrapper h2 { margin-left: 15px;}
+  .search_btn { margin-left: 15px;}
+  #search {
+    width: 193px;}
+  .bloc-footer { position: relative; width: 100%; height: auto; padding: 20px;}
+  .about { padding-bottom: 20px; }
+  .about h2 { padding-bottom: 8px; padding-top: 24px; }
+  .title-pop > h1 { font-size: 22px;}
+  .title-hebergement h1 { font-size: 22px;}
+  .wrapper h1 {font-size: 22px;}
+  footer { margin-right: 0; margin-left: -40px;}
+
+}
 
 @media screen and (max-width: 414px){
+  #hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    font-family: var(--font);
+    font-size: var(--size-link-menu);
+    font-weight: var(--weight-regular);
+    text-decoration: none;
+  }
+  #hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -1px;
+    background: #2098d1;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  #hvr-underline-from-left:hover:before, #hvr-underline-from-left:focus:before, #hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
   .mobile{display:initial;}
   .web{display:none;}
   .btn {
@@ -703,7 +790,7 @@ footer {
   .link-blue { position: absolute; right: 5px; top: 15px; margin-right: 15px;}
   header > .logo img { width: 90px; height: auto; margin-top: 15px;margin-left: 15px;}
   .bloc-petite-vignette { flex-direction: column;padding: 0;}
-  .bloc-vignette { width: 350px; height: auto;}
+  .bloc-vignette { width: 318px; height: auto;}
   .contenair {margin-top: 1020px; background-color: #FFF;}
   .bloc-articles { grid-template-columns: repeat(1, 1fr);}
   .grid-activity { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(6, 1fr); }
@@ -731,13 +818,17 @@ footer {
     width: 193px;
 }
   .bloc-footer { position: relative; width: 100%; height: auto; flex-direction: column; padding-bottom: 20px; padding-top: 20px;}
-  .about { width: 69%; justify-content: flex-start; padding-bottom: 20px; }
+  .about { width: 88%; justify-content: flex-start; padding-bottom: 20px; }
   .about h2 { padding-bottom: 8px; padding-top: 24px; }
   footer {
-    margin-right: -28px;}
+    margin-right:0;}
   .title-pop > h1 { font-size: 22px;}
   .title-hebergement h1 { font-size: 22px;}
   .wrapper h1 {font-size: 22px;}
+footer {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 }
 
