@@ -702,17 +702,17 @@ footer {
   .filter { margin-bottom: 20px; margin-left: 15px; margin-right: 0;}
   .one { grid-gap: 30px;}
   .info { margin-left: 15px;}
-  .wrapper h1 { margin-left: 15px;font-size: 22px;}
-  .wrapper h2 { margin-left: 15px;font-size: 14px;}
+  .wrapper h1 { margin-left: 15px;font-size: var(--size-h1-mobile);}
+  .wrapper h2 { margin-left: 15px;font-size: var(--size-h2-mobile);}
   .search_btn { margin-left: 15px;}
   #search {
     width: 193px;}
   .bloc-footer { position: relative; width: 100%; height: auto; padding: 20px;}
   .about { padding-bottom: 20px; }
   .about h2 { padding-bottom: 8px; padding-top: 24px; }
-  .title-pop > h1 { font-size: 22px;}
-  .title-hebergement h1 { font-size: 22px;}
-  .wrapper h1 {font-size: 22px;}
+  .title-pop > h1 { font-size: var(--size-h1-mobile);}
+  .title-hebergement h1 { font-size: var(--size-h1-mobile);}
+  .wrapper h1 {font-size: var(--size-h1-mobile);}
   footer { margin-right: 0; margin-left: -40px;}
 
 }
@@ -742,7 +742,7 @@ footer {
     .bloc-vignette { width: 236px; height: auto;}
     .iconinfo {width: 20px;}
     i.fas.fa-info {font-size: 10px;}
-    .title-pop > h1 { font-size: 22px;}
+    .title-pop > h1 { font-size: var(--size-h1-mobile);}
     .petit-contenair {top: 578px;}
     #search {width: 161px;}
     .btn {right: 41px;}
