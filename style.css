@@ -332,7 +332,7 @@ button.btn {
 
 /* ///////////////////////////////////////////  BLOC HEBERGEMENT  /////////////////////////////////////////// */
 
-.titre-hebergement {
+.section-hebergement h1 {
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -353,8 +353,8 @@ section.section-hebergement {
 }
 
 .article {
-    background-color: white;
-    border: 10px solid white;
+    background-color: #FFFFFF;
+    border: 10px solid #FFFFFF;
     border-radius: 22px;
 }
 .bloc-article {
@@ -633,8 +633,11 @@ i.fas.fa-chart-line {
   .btn { right: 103px;}
 
 }
+
 @media screen and (max-width: 375px){
-  .btn {right: 60px;} }
+  .btn { right: 60px;}
+}
 
 @media screen and (max-width: 320px){
-  .btn {right: 28px;} }
+  .btn { right: 28px;}
+}
