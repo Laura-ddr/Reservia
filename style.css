@@ -121,7 +121,8 @@ header > .logo img {
   font-weight: var(--weight-regular);
   position: relative;
   display: block;
-  padding: 15px 40px;
+  padding: 15px 0;
+  padding-right: 40px;
   text-decoration: none;
 
 }
@@ -608,7 +609,7 @@ i.fas.fa-chart-line {
   .menu ul { display: flex; list-style-type: none; justify-content: space-around; }
   .menu { grid-row: 2;}
   .menu > ul > li { padding-right: 0;}
-  header > .logo img {width: 94px;height: auto;padding-left: 40px;}
+  header > .logo img {width: 94px;height: auto;padding-left: 20px;}
   .bloc-article {grid-template-columns: 1fr;}
   .contenair-activity { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(6, 1fr); }
   .item--large { grid-area: 1/1/2/2;}
