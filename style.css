@@ -69,7 +69,7 @@ a {
 
 header {
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1;
@@ -104,7 +104,7 @@ header > .logo img {
 }
 
 .link1{
-  color: #000;
+  color: var(--black);
   position: relative;
   display: block;
   padding: 15px 0;
@@ -146,7 +146,7 @@ header > .logo img {
 /*///////////////////////////////////////////  SOUS-HEADER  ///////////////////////////////////////////*/
 
 section.sous-header {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     margin-top: 40px;
     padding-left: 40px;
 }
@@ -196,7 +196,7 @@ button.btn {
   width: 130px;
   background-color: var(--dark-blue);
   border: solid 1px var(--dark-blue);
-  color: #FFF;
+  color: var(--white);
 }
 
 .mobile{display:none;}
@@ -236,7 +236,7 @@ button.btn {
 
 .fa-child, .fa-heart, .fa-dog {
   font-size: 16px;
-  color: #0065FC;
+  color: var(--dark-blue);
   background-color: var(--light-blue);
   border-radius: 100%;
   padding: 7px;
@@ -244,7 +244,7 @@ button.btn {
 
 .fa-money-bill-wave {
   font-size: 14px;
-  color: #0065FC;
+  color: var(--dark-blue);
   background-color: var(--light-blue);
   border-radius: 100%;
   padding: 8px 7px;
@@ -354,15 +354,14 @@ section.section-hebergement {
 }
 
 .article {
-    background-color: #FFFFFF;
-    border: 10px solid #FFFFFF;
+    background-color: var(--white);
+    border: 10px solid var(--white);
     border-radius: 22px;
 }
 .bloc-article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
-    /* margin-bottom: 20px; */
     margin: 20px;
 }
 
@@ -413,7 +412,6 @@ margin-top: 4px
       object-fit: cover;
       margin: auto;
       width: 100%;
-      /* border-top-right-radius: 17px; */
       border-top-left-radius: 17px;
       border-bottom-left-radius: 17px;
       overflow: hidden;
@@ -431,7 +429,6 @@ margin-left: 20px;
 margin-right: 20px;
 margin-top: 20px;
 display: flex;
-/* flex-grow: 3; */
 justify-content: space-between;
 }
 
@@ -491,7 +488,7 @@ i.fas.fa-chart-line {
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white);
   background: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -542,9 +539,9 @@ i.fas.fa-chart-line {
   border-bottom-left-radius: 22px;
   z-index: 1;
   padding: 20px;
-  color: #000;
-  background: #fff;
-  color: #000;
+  color: var(--black);
+  background: var(--white);
+  color: var(--black);
 }
 
 /*///////////////////////////////////////////  FIN ACTIVITE ///////////////////////////////////////////*/
