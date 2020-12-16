@@ -472,10 +472,10 @@ i.fas.fa-chart-line {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-start: auto;
+  /* grid-row-start: auto; */
   grid-auto-rows: 150px;
-  grid-auto-flow: row dense;
-  grid-auto-flow: column;
+  /* grid-auto-flow: row dense; */
+  /* grid-auto-flow: column; */
   margin-right: 40px;
   margin-left: 40px;
 }
@@ -487,7 +487,7 @@ i.fas.fa-chart-line {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: var(--white);
   background: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   background-size: cover;
